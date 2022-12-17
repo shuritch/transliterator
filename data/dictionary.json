@@ -15,5 +15,6 @@
 	"comments": ["{", "}"],
 	"comma": [","],
 	"semicolon": [";"],
-	"function call": ["(", ")"]
+	"function call": ["(", ")"],
+	"compound": ["[", "]"]
 }

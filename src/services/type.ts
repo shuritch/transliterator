@@ -1,4 +1,4 @@
-import dict from '../data/dictionary.json' assert { type: 'json' };
+import dict from '../../data/dictionary.json' assert { type: 'json' };
 
 // Определяем тип лексемы (Например: >= - оператор сравнения)
 const typeAnalyzer = (input: string): null | string => {

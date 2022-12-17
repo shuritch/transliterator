@@ -1,39 +1,44 @@
-{ CHECK THIS }
-program
+{ 
+  CHECK THIS }
+program { TEST }
 var int intValue, intValue2
-var bool boolValue
-var float floatValue
-var int charValue
+var { TEST } bool boolValue
+var float { TEST } floatValue
+var int charValue { TEST }
 
 { AMAZING }
-begin [
-  intValue2 as 1
-  boolValue as false
-  floatValue as true
-  charValue as 3
-  {
-    WOW
-  }
-  while(floatValue) [
+begin { TEST } [
+  intValue2 {TEST} as 1
+  boolValue as {TEST} false
+  floatValue as 13.3 {TEST}
+  charValue {
+    Test
+  } as 3
+  { WOW }
+
+  while {
+    TEST }floatValue { TEST } do { TEST } [
     var int test;
-    test as 3 * 2;
-    if(floatValue = true && intValue2 > 2) [
-      floatValue = false;
+    test as 3 { TEST } * {TEST} 2 {TEST}
+    if(floatValue {TEST} = true && {TEST} intValue2 > {TEST} 2) [
+      floatValue = {TEST} false;
     ]
 
-    if(floatValue = 3 && intValue2 > 2) floatValue as false;
+    if(floatValue = 3 &{TEST}& intValue2 > 2) {TEST} floatValue as false {TEST}
     { TEST }
   ]
 
   var int i;
-  for intValue2 as 1 to intValue2 = 2 do [
+  {TEST} for {TEST} intValue2 {TEST} as 1 {TEST} to {TEST} intValue2 = {TEST} 2 {TEST} do {TEST} [
     intValue2 as intValue2 + 1
-  ]
+  ] {TEST}
   <>><>=<=+-*/=
-  read(intValue, boolValue)
-  write(123)
-]
+  read({TEST} intValue {TEST}, {TEST} boolValue {TEST}) {TEST}
+  write(123) {TEST}
+]; {TEST}
+write(32) {TEST}
 
 {
-
+{ LOL }
 end
+{ LOL }
