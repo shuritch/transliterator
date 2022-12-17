@@ -1,0 +1,19 @@
+{
+	"relations": ["=", ">=", ">", "<>", "<", "<="],
+	"addition": ["+", "or", "-"],
+	"multiplication": ["*", "/", "and"],
+	"unary": ["not"],
+	"program": ["program", "var", "begin", "end"],
+	"data types": ["int", "float", "bool"],
+	"appropriation": ["as"],
+	"conditional": ["if", "then", "else", "end_else"],
+	"cycle": ["for", "to"],
+	"conditional cycle": ["while"],
+	"cycle do": ["do"],
+	"read": ["read"],
+	"write": ["write"],
+	"comments": ["{", "}"],
+	"comma": [","],
+	"semicolon": [";"],
+	"function call": ["(", ")"]
+}

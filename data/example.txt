@@ -1,0 +1,39 @@
+{ CHECK THIS }
+program
+var int intValue, intValue2
+var bool boolValue
+var float floatValue
+var int charValue
+
+{ AMAZING }
+begin [
+  intValue2 as 1
+  boolValue as false
+  floatValue as true
+  charValue as 3
+  {
+    WOW
+  }
+  while(floatValue) [
+    var int test;
+    test as 3 * 2;
+    if(floatValue = true && intValue2 > 2) [
+      floatValue = false;
+    ]
+
+    if(floatValue = 3 && intValue2 > 2) floatValue as false;
+    { TEST }
+  ]
+
+  var int i;
+  for intValue2 as 1 to intValue2 = 2 do [
+    intValue2 as intValue2 + 1
+  ]
+  <>><>=<=+-*/=
+  read(intValue, boolValue)
+  write(123)
+]
+
+{
+
+end
