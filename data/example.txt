@@ -9,8 +9,9 @@ var int charValue { TEST }
 { AMAZING }
 begin { TEST } [
   intValue2 {TEST} as 1
+  var int test
   boolValue as {TEST} false
-  floatValue as 13.3 {TEST}
+  test as 13 {TEST}
   charValue {
     Test
   } as 3
@@ -18,27 +19,31 @@ begin { TEST } [
 
   while {
     TEST }floatValue { TEST } do { TEST } [
-    var int test;
-    test as 3 { TEST } * {TEST} 2 {TEST}
-    if(floatValue {TEST} = true && {TEST} intValue2 > {TEST} 2) [
-      floatValue = {TEST} false;
+    var int test
+    test as not { TEST }  3 { TEST } * {TEST} 2 {TEST}
+    if floatValue {TEST} = true && {TEST} intValue2 > {TEST} 2 then [
+      floatValue as {TEST} false
     ]
 
-    if(floatValue = 3 &{TEST}& intValue2 > 2) {TEST} floatValue as false {TEST}
+    {TEST} else {TEST} floatValue as true
+
+    [ { TEST} floatValue as true ]
+
+    if floatValue = 3 &&{TEST} intValue2 > 2  then {TEST} floatValue as false {TEST}
     { TEST }
   ]
 
-  var int i;
+  var int i
   {TEST} for {TEST} intValue2 {TEST} as 1 {TEST} to {TEST} intValue2 = {TEST} 2 {TEST} do {TEST} [
     intValue2 as intValue2 + 1
-  ] {TEST}
-  <>><>=<=+-*/=
+  ] {TEST} 
+  
+{TEST}{TEST TEST}
   read({TEST} intValue {TEST}, {TEST} boolValue {TEST}) {TEST}
   write(123) {TEST}
 ]; {TEST}
 write(32) {TEST}
 
-{
+
 { LOL }
 end
-{ LOL }
