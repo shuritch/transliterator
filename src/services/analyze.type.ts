@@ -131,7 +131,9 @@ class Lexer {
 		this.i++;
 		if (lex?.lexeme !== 'end')
 			return this.errors.push(new Error('Unexpected name, awaited: end', lex));
-		if (this.i < this.data.length - 1)
+		this.lex_comment();
+
+		if (this.i <= this.data.length - 1)
 			return this.push('Unexpected expressions, after program end', this.data[this.i]);
 	});
 
