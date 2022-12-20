@@ -114,9 +114,10 @@ class Lexer {
 
 		do {
 			this.i++;
+			this.lex_comment();
 			this.lex_operator('begin');
 			this.blocks.current = 'begin';
-			this.i--;
+			if (this.data[this.i]?.type !== 'semicolon') this.i--;
 			this.lex_comment_reverse();
 		} while (this.data[this.i]?.type === 'semicolon');
 		this.i++;
@@ -308,8 +309,8 @@ class Lexer {
 					this.lex_comment();
 				}
 			} else {
-				this.lex_comare();
-				while (this.data[this.i]?.lexeme === ',') this.lex_comare();
+				this.lex_expression();
+				while (this.data[this.i]?.lexeme === ',') this.lex_expression();
 			}
 			this.lex_comment();
 			if (this.data[this.i]?.lexeme !== ')')

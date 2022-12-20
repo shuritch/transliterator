@@ -42,8 +42,8 @@ begin { TEST } [
   read({TEST} intValue {TEST}, {TEST} boolValue {TEST}) {TEST}
   write(123) {TEST}
 ]; {TEST}
-write(32) {TEST}
-
+write(32); {TEST}
+read(intValue)
 
 { LOL }
 end

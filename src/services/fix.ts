@@ -1,4 +1,4 @@
-const fixInput = (input: string) => {
+const fixInput = (input: string): string => {
 	// Правим разделители
 	return input
 		.replace(/\,/g, ' , ')
